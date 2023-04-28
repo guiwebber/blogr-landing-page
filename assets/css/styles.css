@@ -257,7 +257,6 @@
 
 #menuOpen {
   display: none;
-  
 }
 @media (max-width: 475px) {
   .list {
@@ -375,44 +374,86 @@
     display: block;
   }
   #menuOpen {
-  width: 92%;
-  height: 85%;
-  background-color: white;
-  position: fixed;
-  top: 90px;
-  border-radius: 5px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-  #productDropMob {
-    background-color: gray; 
-    padding: 30px 0;
-    width: 200px;
+    width: 92%;
+    height: 85%;
+    background-color: white;
+    position: fixed;
+    top: 90px;
     border-radius: 5px;
-    display: none;
+    padding-top: 20px;
+    box-shadow: 1px 1px 15px 5px;
   }
-  #dropMob {
+  #productDropMob,
+  #companyDropMob,
+  #connectConnMob {
+    background-color: gray;
+    padding: 30px 0;
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  #dropMob,
+  #compDropMob,
+  #connDropMob {
     width: 100px;
     text-align: center;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
-  #dropMob img {
-    width: 12px;
-    height: 10px;
+  #dropMob img,
+  #compDropMob img,
+  #connDropMob img {
+    margin-left: 5px;
   }
-  #productDropMob li {
+  #productDropMob li,
+  #companyDropMob li,
+  #connectConnMob li {
     margin: 10px 0;
   }
 
-  #menuOpen a {
+  #menuOpen a,
+  #menuOpen button {
     color: black;
+    font-size: 1.3rem;
   }
 }
+#loginList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  position: fixed;
+  right: 33%;
+  bottom: 5%;
+}
 
+#loginList #signMob {
+  background-image: linear-gradient(
+    to left,
+    hsl(353, 100%, 62%),
+    hsl(13, 100%, 72%)
+  );
+  padding: 12px 35px;
+  color: white;
+  border-radius: 25px;
+}
+
+#loginList #loginMob {
+  margin: 20px;
+}
+button {
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
 @media (max-width: 1440px) {
   .imageSection img {
     margin: 0 -25px 0 50px;
